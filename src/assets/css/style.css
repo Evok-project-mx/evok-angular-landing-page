@@ -3390,3 +3390,60 @@ h1 span {
 .col-left {
     padding-left: 0px;
 }
+
+.word-animation::before,
+.word-animation::after {
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute
+}
+
+
+/* -------------------------------------- */
+
+.container-animation {
+    font-size: 50px;
+    font-family: 'Poppins';
+}
+
+.container-animation span.typed-text {
+    font-weight: normal;
+    color: #dd7732;
+}
+
+.container-animation span.cursor {
+    display: inline-block;
+    background-color: #473E6A;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+.container-animation span.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #473E6A;
+    }
+    49% {
+        background-color: #473E6A;
+    }
+    50% {
+        background-color: transparent;
+    }
+    99% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: #473E6A;
+    }
+}
+
+.evok-email {
+    font-size: 14px;
+}
