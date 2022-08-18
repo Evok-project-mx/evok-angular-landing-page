@@ -248,12 +248,12 @@ body {
     transition: .3s all linear;
     opacity: 0;
     visibility: hidden;
-    background: #5b39c9;
+    background: #EA5B0C;
     border-radius: 50px;
 }
 
 .btn:hover {
-    border-color: #5b39c9;
+    border-color: #EA5B0C;
 }
 
 .btn:hover:before {
